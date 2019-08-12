@@ -1,7 +1,13 @@
 package Utilities;
 
+/**
+ * This class generates the serial numbers for all parts of the vehicle.
+ */
 public class SerialNumberGenerator {
 
+    /**
+     * Serial number accumulators.
+     */
     private static int deviceSerialNumber = 0;
     private static int systemSerialNumber = 0;
     private static int vehicleSerialNumber = 0;

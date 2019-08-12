@@ -2,8 +2,14 @@ package Utilities;
 
 import java.lang.reflect.InvocationTargetException;
 
+/**
+ * Verifies all inputs when creating vehicles.
+ */
 public class Verification {
 
+    /**
+     * Deems the error types for verification.
+     */
     enum ErrorType{
         NONE,
         NULL,
@@ -15,11 +21,15 @@ public class Verification {
 
     private final static int EMPTY = 0;
 
-    //Compounds for error messages
+    /**
+     * COMPOUNDS for error statements
+     */
     private final static String OR = " or ";
     private final static String AND = " and ";
 
-    //Error messages that match up to the ErrorType
+    /**
+     * Error messages matching up to enum types.
+     */
     private final static String NO_ERROR = "";
     private final static String NULL = " can't be null!";
     private final static String DEFAULT = " there should be an error message here";
