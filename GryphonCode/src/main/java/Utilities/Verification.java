@@ -13,6 +13,8 @@ public class Verification {
         POSITIVE_OR_ZERO
     }
 
+    private final static int EMPTY = 0;
+
     //Compounds for error messages
     private final static String OR = " or ";
     private final static String AND = " and ";
@@ -56,7 +58,7 @@ public class Verification {
      * @return
      */
     public static void notNull(Object object, String varName){
-        if(object == null){
+        if(object == null || (object.getClass() == String.class && ((String) object).length() == EMPTY )){
             throwErrorMessage(varName, ErrorType.NULL);
         }
     }
