@@ -15,6 +15,9 @@ public class PropulsionSystem {
     private long startTime;
     private int serialNumber;
 
+    /**
+     * Propulsion System Error Messages
+     */
     private final static String PROPULSION_DEVICE = "Propulsion Device";
     private final static String PROPULSION_SYSTEM_START_TIME = "Propulsion System Start Time";
 
@@ -46,6 +49,14 @@ public class PropulsionSystem {
         notNull(propulsionDevice, PROPULSION_DEVICE);
         this.propulsionDevice = propulsionDevice;
         this.serialNumber = generatePropulsionSystemSerialNumber();
+    }
+
+    /**
+     * Get the serial number of the propulsion system.
+     * @return serial number
+     */
+    public int getSerialNumber(){
+        return serialNumber;
     }
 
     /**
