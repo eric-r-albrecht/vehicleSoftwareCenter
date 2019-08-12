@@ -26,8 +26,6 @@ public class Car extends Vehicle {
     /**
      * Car Class Variables
      */
-    private String make;
-    private String model;
     private String licensePlate;
 
     /**
@@ -50,4 +48,13 @@ public class Car extends Vehicle {
         return licensePlate;
     }
 
+    /**
+     * Print out the full vehicle.
+     * @return full vehicle printout.
+     */
+    public String printFullVehicle() {
+        String printout = printVehicle();
+        printout += CAR_LICENSE_PLATE + COLON_SPACE + licensePlate + NEWLINE;
+        return printout;
+    }
 }
