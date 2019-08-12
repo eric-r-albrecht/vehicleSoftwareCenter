@@ -8,7 +8,7 @@ import static Utilities.Verification.*;
  */
 public class PropulsionDevice {
 
-    enum DeviceType
+    public enum DeviceType
     {
         Rotor,
         Wheels
